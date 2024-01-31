@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Learning
+{
+    internal class Program
+    {
+        enum cor {Azul = 23, Verde, Amarelo, Vermelho}
+        static void Main(string[] args)
+        {
+            /*
+            string produto1 = "Hollow knight";
+            string produto2 = "Minecraft";
+            string produto3 = "Portal";
+            string produto4 = "CS";
+
+            string[] produtos = new string[4] {"Hollow knight", "Minecraft", "Portal", "CS"};
+            int[] valores = { 12, 17, 21, 25, 30};
+
+            produtos[3] = "CS2";
+            Console.WriteLine(produtos[3]);
+            */
+
+            Console.WriteLine("Escreva sua cor favorita");
+            string corFavorita = Console.ReadLine();
+            cor corForte = cor.Verde;
+
+            switch (corFavorita)
+            {
+                case "Vermelho":
+                    Console.WriteLine("Sua cor favorita é vermelho!");
+                    break;
+                case "Amarelo":
+                    Console.WriteLine("Sua cor favorita é amarelo!");
+                    break;
+                case "Azul":
+                    Console.WriteLine("Sua cor favorita é azul!");
+                    break;
+                default:
+                    Console.WriteLine("Sua cor não é valida");
+                    break;
+            }
+            Console.WriteLine((int)corForte);
+            Console.WriteLine((cor)24);
+
+            Console.ReadLine();
+        }
+    }
+}
