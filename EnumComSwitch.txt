@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EnumComSwitch
+{
+    internal class Program
+    {
+        enum opcoes { Criar = 1, Deletar, Editar, Listar, Atualizar}
+        static void Main(string[] args)
+        {
+            /*
+            Console.WriteLine("Escolha uma das opções abaixo:");
+            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+            opcoes opcaoSelecionada = (opcoes)index;
+
+            switch(opcaoSelecionada)
+            {
+                case opcoes.Criar:
+                    Console.WriteLine("Foi escolhida a opção Criar!");
+                    break;
+                case opcoes.Deletar:
+                    Console.WriteLine("Foi escolhida a opção Deletar!");
+                    break;
+                case opcoes.Editar:
+                    Console.WriteLine("Foi escolhida a opção Editar!");
+                    break;
+                case opcoes.Listar:
+                    Console.WriteLine("Foi escolhida a opção Listar!");
+                    break;
+                case opcoes.Atualizar:
+                    Console.WriteLine("Foi escolhida a opção Atualizar!");
+                    break;
+                default:
+                    Console.WriteLine("Numero não reconhecido");
+                    break;
+
+            }
+            */
+            int contador = 0;
+            while(contador <= 20)
+            {
+                Console.WriteLine(contador);
+                Console.WriteLine("Rodando o While!");
+                contador++;
+            }
+
+            int contador2 = 0;
+            do
+            {
+                Console.WriteLine("do while!");
+                contador2++;
+            } while (contador2 < 10);
+
+            string[] palavras = { "Eros", "Casa", "Jogo", "Serviço", "Treco" };
+
+            foreach (string palavra in palavras)
+            {
+                Console.WriteLine(palavra);
+            }
+
+            Console.WriteLine("---------------------------------------------------------------");
+
+            for(int contador3 = 0; contador3 < palavras.Length; contador3++)
+            {
+                Console.WriteLine(palavras[contador3]);
+            }
+
+            Console.WriteLine("---------------------------------------------------------------");
+
+            for (int contador4 = 4; contador4 > 0; contador4--)
+            {
+                Console.WriteLine(palavras[contador4]);
+            }
+
+            Console.WriteLine("Fim!");
+            Console.ReadLine();
+        }
+    }
+}
